@@ -10,7 +10,7 @@ import java.util.Objects;
  * @Description:
  */
 @Entity
-@Table(name = "test_solr", schema = "xhm_db", catalog = "")
+@Table(name = "test_solr", schema = "parent_db", catalog = "")
 public class TestSolr {
     private int id;
     private String testTitle;

@@ -1,5 +1,7 @@
 package com.memory.common.utils;
 
+import org.springframework.util.DigestUtils;
+
 import java.text.SimpleDateFormat;
 import java.util.UUID;
 
@@ -32,6 +34,8 @@ public class Utils {
         }
         return shortBuffer.toString();
     }
+
+    public static String md5Password(String str){ return  DigestUtils.md5DigestAsHex(str.getBytes()); }
 
     public static SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     public static SimpleDateFormat sf_yMd = new SimpleDateFormat("yyyy-MM-dd");
